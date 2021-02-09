@@ -1,18 +1,51 @@
 {
     "name": "mystflip/location",
-    "description": "Find user Location in Statamic",
-    "keywords": ["statamic","statamic3", "location", "ip"],
-    "homepage": "https://github.com/philpasquin/location",
-    "license": "MIT",
+    "description": "Find user Location in Statamic based on IP Adress",
+    "version": "1.0.0",
+    "type": "statamic-addon",
+    "keywords": [
+        "Statamic",
+        "Location",
+        "IP",
+        "Geo",
+        "Country",
+        "tools",
+        "userLocation"
+    ],
     "authors": [
         {
-            "name": "Phil Pasquin",
-            "email": "p@pasquin.ca",
-            "homepage": "https://pasquin.ca",
-            "role": "Developer"
+            "name": "MYST",
+            "email": "location@mystflip.com"
         }
     ],
-     "require": {
-        "mystflip/location": "^6.1"
+    "autoload": {
+        "psr-4": {
+            "Mystflip\\Location\\": "src"
+        }
+    },
+    "extra": {
+        "statamic": {
+            "name": "User Location",
+            "description": "Get user location from IP Address"
+        },
+        "laravel": {
+            "providers": [
+                "Mystflip\\Location\\LocationServiceProvider"
+            ],
+            "aliases": {
+                "Location": "Mystflip\\Location\\Facades\\Location"
+            }
+    },
+    "require": {
+        "php": ">=7.0",
+        "ext-json": "*",
+        "ext-curl": "*",
+        "illuminate/support": "~5.0|~6.0|~7.0|~8.0",
+        "geoip2/geoip2": "^2.0"
+    },
+    "require-dev": {
+        "mockery/mockery": "~0.9|^1.0",
+        "orchestra/testbench": "~3.2|~4.0|^6.0"
     }
+}
 }

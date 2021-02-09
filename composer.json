@@ -1,5 +1,18 @@
 {
-    "require": {
+    "name": "mystflip/location",
+    "description": "Find user Location in Statamic",
+    "keywords": ["statamic","statamic3", "location", "ip"],
+    "homepage": "https://github.com/philpasquin/location",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Jordi Boggiano",
+            "email": "j.boggiano@seld.be",
+            "homepage": "http://seld.be",
+            "role": "Developer"
+        }
+    ],
+     "require": {
         "Mystflip/location": "^6.1"
     }
 }

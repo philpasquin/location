@@ -1,6 +1,6 @@
 {
     "name": "mystflip/location",
-    "description": "Find user Location in Statamic",
+    "description": "Find user Location in Statamic based on IP Adress",
     "keywords": ["statamic","statamic3", "location", "ip"],
     "homepage": "https://github.com/philpasquin/location",
     "license": "MIT",

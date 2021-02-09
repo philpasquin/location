@@ -13,6 +13,6 @@
         }
     ],
      "require": {
-        "Mystflip/location": "^6.1"
+        "mystflip/location": "^6.1"
     }
 }
